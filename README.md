@@ -11,14 +11,14 @@ Entire solution has been containarized using dockers, docker-compose for spinnin
 Solution is developed in 2 phases: 
 
 
-###  1st phase will be setting up a Spark local cluster and running ETL pipelines in local cluster.
+###  1st phase will be setting up a Spark local cluster and running ETL pipelines in local cluster
 
 ```sh build.sh``` command will created images for development environment creating required Images for master and workers in the cluster. 
 Once images are build locally, ```docker-compose.yml``` will launch development environments, defining dependencies as separate containers. 
 
 
 
-###  2nd phase will be deploying to a Kubernetes cluster. (Work In Progress)
+###  2nd phase will be deploying to a Kubernetes cluster (Work In Progress)
 
 For development purpose, we will be working with Mini kube deployments. In production env, it can be EKS or GKE cluster. 
 For kubernetes deployments, will be setting up with spark-submit operator and Spark Operator, from Google 
